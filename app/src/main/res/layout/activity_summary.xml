@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SummaryActivity">
+    android:orientation="vertical"
+    android:padding="40dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/boubou_shop_logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/text_view_display_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            tools:text="You have complete freedom tYou have complete freedom to design the Registration Activity and Summary Activity however you like. The priority here isn't a beautiful registration page, it is creating forms, gathering the data, and passing it to a new Activity (and programming in Kotlin!). You have complete freedom to design the Registration Activity and Summary Activity however you like. The priority here isn't a beautiful registration page, it is creating forms, gathering the data, and passing it to a new Activity (and programming in Kotlin!). o design the Registration Activity and Summary Activity however you like. The priority here isn't a beautiful registration page, it is creating forms, gathering the data, and passing it to a new Activity (and programming in Kotlin!). " />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
