@@ -11,5 +11,5 @@ data class RegisterFormData(
     val phoneNumber: String,
     val password: String
 ): Serializable{
-
+    fun getFullName()= "$spinner $firstName $lastName"
 }

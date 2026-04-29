@@ -13,21 +13,26 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/boubou_shop_logo" />
 
-    <androidx.cardview.widget.CardView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="6dp"
-        app:cardUseCompatPadding="true">
+        android:text="@string/your_account_details" />
 
-        <TextView
-            android:id="@+id/text_view_display_information"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="#212121"
-            android:textSize="18sp"
-            tools:text="You have complete freedom tYou have complete freedom to design the Registration Activity and Summary Activity however you like. The priority here isn't a beautiful registration page, it is creating forms, gathering the data, and passing it to a new Activity (and programming in Kotlin!). You have complete freedom to design the Registration Activity and Summary Activity however you like. The priority here isn't a beautiful registration page, it is creating forms, gathering the data, and passing it to a new Activity (and programming in Kotlin!). o design the Registration Activity and Summary Activity however you like. The priority here isn't a beautiful registration page, it is creating forms, gathering the data, and passing it to a new Activity (and programming in Kotlin!). " />
+    <TextView
+        android:id="@+id/text_view_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Mr full name user" />
 
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/text_view_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="email@gmail.com" />
+
+    <TextView
+        android:id="@+id/text_view_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="phone number 123456" />
 </LinearLayout>
